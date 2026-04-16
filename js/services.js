@@ -461,3 +461,86 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
     let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
     return R * c;
 }
+
+window.onload = function () {
+    let original = document.querySelector(".template-service").innerHTML;
+    let copies = document.querySelectorAll(".copy-ac");
+
+    copies.forEach(box => {
+        box.innerHTML = `
+            <div class="service">
+                ${original}
+            </div>
+        `;
+    });
+};
+
+function searchProviders() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+    let services = document.querySelectorAll(".service");
+
+    services.forEach(service => {
+        let serviceName = service.querySelector("h2").innerText.toLowerCase();
+        let cardsInside = service.querySelectorAll(".card");
+        let serviceVisible = false;
+
+        cardsInside.forEach(card => {
+            let providerName = card.querySelector("h3").innerText.toLowerCase();
+
+            if (
+                providerName.includes(input) ||
+                serviceName.includes(input)
+            ) {
+                card.style.display = "block";
+                serviceVisible = true;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        service.style.display = serviceVisible ? "block" : "none";
+    });
+}
+
+document.getElementById("searchInput").addEventListener("keyup", function (e) {
+    if (e.key === "Enter") {
+        searchProviders();
+    }
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let btn = document.getElementById("searchBtn");
+
+    if (btn) {
+        btn.addEventListener("click", searchProviders);
+    }
+});
+
+function searchProviders() {
+    let input = document.getElementById("searchInput").value.toLowerCase().trim();
+    let services = document.querySelectorAll(".service");
+
+    services.forEach(service => {
+        let serviceName = service.querySelector("h2").innerText.toLowerCase();
+        let cards = service.querySelectorAll(".card");
+        let matchFound = false;
+
+        cards.forEach(card => {
+            let providerName = card.querySelector("h3").innerText.toLowerCase();
+
+            if (
+                providerName.includes(input) ||
+                serviceName.includes(input)
+            ) {
+                card.style.display = "block";
+                matchFound = true;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        service.style.display = matchFound ? "block" : "none";
+    });
+}
