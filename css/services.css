@@ -268,3 +268,18 @@ body {
     margin: 6px 0;
     font-weight: bold;
 }
+
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 250px;
+}
+
+.search-box button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
