@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Services</title>
+    <link rel="stylesheet" href="css/name.css">
+</head>
+
+<body>
+    
+    <h2>🔧 Our Top Services</h2>
+
+    <div id="servicelist"></div>
+    
+        <!-- 🔹 Home Services -->
+        <h3>🏠 Home Services</h3>
+        <div class="service-item" onclick="selectService('House Cleaning')">🧹 House Cleaning</div>
+        <div class="service-item" onclick="selectService('Sofa Cleaning')">🛋 Sofa Cleaning</div>
+        <div class="service-item" onclick="selectService('Bathroom Cleaning')">🚿 Bathroom Cleaning</div>
+        <div class="service-item" onclick="selectService('Window Cleaning')">🪟 Window Cleaning</div>
+    
+        <!-- 🔹 Repair Services -->
+        <h3>🛠 Repair Services</h3>
+        <div class="service-item" onclick="selectService('AC Repair')">❄ AC Repair</div>
+        <div class="service-item" onclick="selectService('Electrician')">🔌 Electrician</div>
+        <div class="service-item" onclick="selectService('Plumber')">🚰 Plumber</div>
+        <div class="service-item" onclick="selectService('Laptop Repair')">💻 Laptop Repair</div>
+        <div class="service-item" onclick="selectService('Mobile Repair')">📱 Mobile Repair</div>
+        <div class="service-item" onclick="selectService('TV Repair')">📺 TV Repair</div>
+    
+        <!-- 🔹 Beauty & Personal -->
+        <h3>💇 Beauty & Personal Care</h3>
+        <div class="service-item" onclick="selectService('Salon Service')">💇 Salon Service</div>
+        <div class="service-item" onclick="selectService('Makeup Artist')">💅 Makeup Artist</div>
+        <div class="service-item" onclick="selectService('Facial & Spa')">🧖 Facial & Spa</div>
+        <div class="service-item" onclick="selectService('Massage Service')">💆 Massage Service</div>
+    
+        <!-- 🔹 Professional Services -->
+        <h3>🎓 Professional Services</h3>
+        <div class="service-item" onclick="selectService('Home Tutor')">👨‍🏫 Home Tutor</div>
+        <div class="service-item" onclick="selectService('Photographer')">📸 Photographer</div>
+        <div class="service-item" onclick="selectService('Videographer')">🎥 Videographer</div>
+        <div class="service-item" onclick="selectService('Event Planner')">🧑‍💼 Event Planner</div>
+    
+        <!-- 🔹 Other Services -->
+        <h3>⚙ Other Services</h3>
+        <div class="service-item" onclick="selectService('Car Wash')">🚗 Car Wash</div>
+        <div class="service-item" onclick="selectService('Pet Care')">🐶 Pet Care</div>
+        <div class="service-item" onclick="selectService('Laundry Service')">🧺 Laundry Service</div>
+        <div class="service-item" onclick="selectService('Packers & Movers')">📦 Packers & Movers</div>
+        <button onclick="bookService(this, 'Plumber')">
+            Choose Expert
+            </button>
+    </div>
+    
+    <script src="js/services.js"></script>
+
+    <script src="js/name.js"></script>
+</body>
+
+</html>

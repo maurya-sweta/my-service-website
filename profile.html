@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body onload="loadProfile()">
+
+    <div class="container">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" width="80">
+
+        <h2>👤 My Profile</h2>
+
+        <!-- USER DETAILS -->
+        <div class="profile-card" id="userDetails"></div>
+
+        <h3>📅 Booking History</h3>
+
+        <div class="booking-grid" id="bookingContainer"></div>
+
+        <button onclick="clearBookings()">🗑️ Clear All</button>
+
+    </div>
+
+    <!-- Only profile.js is needed here -->
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>

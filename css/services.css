@@ -1,0 +1,270 @@
+/* =========================
+   GLOBAL
+========================= */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+.title {
+    text-align: center;
+    color: #00eaff;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* =========================
+   SERVICE SECTION
+========================= */
+.service {
+    margin-bottom: 45px;
+}
+
+.service h2 {
+    color: #ffcc00;
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+/* =========================
+   PROVIDERS GRID
+========================= */
+.providers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+.card {
+    width: 220px;
+    padding: 20px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #1e1e2f, #2a2a40);
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+/* =========================
+   BUTTONS CONTAINER
+========================= */
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+/* =========================
+   COMMON BUTTON STYLE
+========================= */
+.btns button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 90px;
+    transition: 0.3s ease;
+}
+
+/* =========================
+   BOOK BUTTON
+========================= */
+.book {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.book:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   CALL BUTTON
+========================= */
+.call {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+}
+
+.call:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+}
+
+.whatsapp:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    .providers {
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns button {
+        width: 100%;
+    }
+}
+
+.phone {
+    color: #27ae60;
+    font-weight: bold;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+.card {
+    position: relative;
+    z-index: 1;
+}
+
+.card button,
+.call,
+.whatsapp,
+.book-btn {
+    position: relative;
+    z-index: 999;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.show-experts-btn {
+    margin: 20px;
+    padding: 10px 18px;
+    background: #00c6ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.top-experts-box {
+    margin: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+.expert-card {
+    background: #2c2c3c;
+    padding: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+.card {
+    position: relative;
+}
+
+.btns {
+    position: relative;
+    z-index: 999;
+}
+
+.btns button {
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.card::before,
+.card::after {
+    pointer-events: none;
+}
+
+.card * {
+    pointer-events: auto;
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-box {
+    width: 350px;
+    background: #fff;
+    color: #111;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#chatMessages {
+    height: 180px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: left;
+}
+
+#chatInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.nearby-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nearby-box button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 25px;
+    background: #0072ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nearby-box button:hover {
+    background: #0056cc;
+}
+
+.distance {
+    color: #00ff99;
+    font-size: 14px;
+    margin: 6px 0;
+    font-weight: bold;
+}

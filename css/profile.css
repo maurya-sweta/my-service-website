@@ -1,0 +1,107 @@
+/* 🌈 Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+/* 📦 Main Container */
+.container {
+    width: 85%;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+
+    text-align: center;
+
+    animation: fadeIn 0.7s ease;
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 👤 Profile Image */
+.container img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* 🧾 Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+
+    backdrop-filter: blur(10px);
+}
+
+/* 📅 Booking Grid */
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* 🧾 Booking Card */
+.card {
+    background: white;
+    color: black;
+    padding: 18px;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    transition: 0.3s;
+}
+
+/* ✨ Hover Effect */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 255, 255, 0.4);
+}
+
+/* 🔘 Button */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🚀 Hover */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+/* 📱 Responsive */
+@media(max-width:600px) {
+    .container {
+        width: 95%;
+    }
+}

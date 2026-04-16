@@ -1,0 +1,59 @@
+/* 🌈 Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* 📦 Container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* 🧾 Title */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Intro */
+.intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* 📦 Cards */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+/* Hover */
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    font-size: 14px;
+}

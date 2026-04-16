@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Service Website</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <!-- 🔷 NAVBAR -->
+    <nav class="navbar">
+        <h2>ServiceHub</h2>
+        <div>
+            <a href="about.html">About</a>
+            <a href="#">Home</a>
+            <a href="services.html">Services</a>
+            <a href="favorite.html">Favorites</a>
+            <a href="history.html">History</a>
+            <a href="contact.html">Contact</a>
+            <a href="profile.html">Profile</a> 
+            <a href="feedback.html">Feedback</a>
+        </div>
+    </nav>
+
+    <!-- 🔷 HERO -->
+    <section class="hero">
+        <h1>Best Home Services at Your Doorstep</h1>
+        <p>Trusted • Fast • Affordable</p>
+        <button onclick="goService()">Book Now</button>
+    </section>
+
+
+    <!-- 🔷 HOW IT WORKS -->
+    <section class="section">
+        <h2>How It Works</h2>
+    
+        <div class="grid">
+    
+            <div class="card">
+                <h3>🔍 Select Service</h3>
+                <p>Choose from wide range of services</p>
+    
+                <!-- ✅ Direct Link (BEST METHOD) -->
+                <a href="name.html">
+                    <button>Find Services</button>
+                </a>
+            </div>
+                
+            <div class="card">
+                <h3>🏠 Get Service</h3>
+                <p>Service at your home</p>
+                <button onclick="goToBooking()">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔷 SERVICES -->
+    <section class="section">
+        <h2>Popular Services</h2>
+
+        <div class="grid">
+            <div class="card" onclick="openService('AC Repair')">AC Repair</div>
+            <div class="card" onclick="openService('Electrician')">Electrician</div>
+            <div class="card" onclick="openService('Plumber')">Plumber</div>
+            <div class="card" onclick="openService('Cleaning')">Cleaning</div>
+            <div class="card" onclick="openService('Painter')">Painter</div>
+            <div class="card" onclick="openService('Carpenter')">Carpenter</div>
+            <div class="card" onclick="openService('Photographer')">Photographer</div>
+            <div class="card" onclick="openService('Makeup Artist')">Makeup Artist</div>
+        </div>
+    </section>
+
+    <!-- 🔷 FEATURES -->
+    <section class="section">
+        <h2>Why Choose Us</h2>
+
+        <div class="grid">
+            <div class="card">⭐ Trusted Professionals</div>
+            <div class="card">⚡ Fast Service</div>
+            <div class="card">💰 Affordable Pricing</div>
+            <div class="card">📞 24/7 Support</div>
+        </div>
+    </section>
+
+    <!-- 🔷 FOOTER -->
+    <footer>
+        <p>© 2026 ServiceHub | All Rights Reserved</p>
+    </footer>
+
+    <!-- ✅ JS CONNECT -->
+    <script src="js/home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Register</h2>
+
+        <form id="registerForm">
+            <input type="email" id="regEmail" placeholder="Enter Gmail" required><br>
+            <input type="text" id="regUsername" placeholder="Username" required><br>
+            <input type="password" id="regPassword" placeholder="Password" required><br>
+            <button type="button" onclick="togglePassword()">👁️ Show Password</button>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="msg"></p>
+
+        <p>Already have an account?
+            <a href="index.html">Login</a>
+        </p>
+
+    </div>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

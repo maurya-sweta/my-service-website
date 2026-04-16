@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+
+    <div class="feedback-container">
+        <h2>💬 Customer Feedback</h2>
+
+        <input type="text" id="name" placeholder="Your Name">
+
+        <textarea id="message" placeholder="Write your feedback..."></textarea>
+
+        <select id="rating">
+            <option value="">⭐ Give Rating</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+            <option value="4">⭐⭐⭐⭐ Good</option>
+            <option value="3">⭐⭐⭐ Average</option>
+            <option value="2">⭐⭐ Poor</option>
+            <option value="1">⭐ Very Bad</option>
+        </select>
+
+        <button onclick="submitFeedback()">Submit Feedback</button>
+
+        <br><br>
+        <a href="review.html" class="view-btn">👉 View All Reviews</a>
+    </div>
+
+    <script src="js/feedback.js"></script>
+    <script src="js/review.js"></script>
+        
+</body>
+
+</html>

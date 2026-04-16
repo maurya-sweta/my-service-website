@@ -1,0 +1,134 @@
+/* 🔥 Background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✨ Container */
+.container {
+    width: 360px;
+    padding: 35px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+
+    text-align: center;
+
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 🎬 Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🧾 Heading */
+.container h2 {
+    color: #ffcc70;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* 📥 Inputs */
+input {
+    width: 92%;
+    padding: 12px;
+    margin: 12px 0;
+
+    border: none;
+    border-radius: 12px;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* ✨ Input Focus */
+input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #666;
+}
+
+/* 🔘 Button */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🚀 Button Hover */
+button:hover {
+    transform: scale(1.08);
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    box-shadow: 0 0 15px rgba(255, 81, 47, 0.7);
+}
+
+/* 💬 Message */
+#message {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #00ffcc;
+}
+
+/* 🔐 CAPTCHA */
+#captchaText {
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #fff;
+
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: inline-block;
+
+    margin-top: 10px;
+
+    box-shadow: 0 0 10px rgba(255, 106, 0, 0.6);
+}
+
+/* 🔗 Register Link */
+a {
+    color: #00c6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

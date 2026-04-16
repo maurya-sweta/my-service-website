@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book a Service</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body class="booking-bg">
+
+    <h1 class="title">📅 Book a Service</h1>
+
+    <div class="container">
+
+        <!-- 👤 Customer name -->
+        <input type="text" id="userName" placeholder="Your Name">
+
+        <!-- 🔧 Service -->
+        <select id="serviceSelect">
+            <option value="">Select Service</option>
+            <option>Plumber</option>
+            <option>Electrician</option>
+            <option>Cleaner</option>
+            <option>Carpenter</option>
+            <option>Painter</option>
+            <option>AC Repair</option>
+            <option>Refrigerator Repair</option>
+            <option>Washing Machine Repair</option>
+            <option>TV Repair</option>
+            <option>Mobile Repair</option>
+            <option>Home Tutor</option>
+            <option>Beauty Parlour</option>
+            <option>Photographer</option>
+            <option>Caterer</option>
+            <option>Event Planner</option>
+            <option>Driver</option>
+            <option>Packers & Movers</option>
+            <option>Pest Control</option>
+            <option>Security Guard</option>
+            <option>Interior Designer</option>
+            <option>Gym Trainer</option>
+            <option>Doctor</option>
+            <option>Car Mechanic</option>
+            <option>Babysitter</option>
+            <option>Pet Care</option>
+        </select>
+
+        <!-- 📅 Date -->
+        <input type="date" id="date">
+
+        <!-- 📍 City -->
+        <input type="text" id="city" placeholder="City">
+
+        <!-- 👨‍🔧 Provider -->
+        <input type="text" id="provider" placeholder="Provider Name">
+
+        <!-- ✅ Button -->
+        <button onclick="confirmBooking()">Confirm Booking</button>
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/booking.js"></script>
+
+</body>
+
+</html>

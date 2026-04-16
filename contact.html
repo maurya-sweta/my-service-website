@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ServiceHub</title>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+    <!-- 🔷 NAVBAR -->
+    <nav class="navbar">
+        <h2>ServiceHub</h2>
+        <div>
+            <a href="home.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="favorite.html">Favorites</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </nav>
+
+    <!-- 🔷 HERO -->
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We are here to help you! Fill the form below or reach out directly.</p>
+    </section>
+
+    <!-- 🔷 CONTACT FORM -->
+    <section class="contact-section">
+        <div class="contact-container">
+
+            <!-- Left Contact Info -->
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>📍 Address: 123 Service Street, Ahmedabad, India</p>
+                <p>📞 Phone: +91 84908 58970</p>
+                <p>✉ Email: <a href="mailto:lsfinder.hub24@gmail.com">lsfinder.hub24@gmail.com</a></p>
+            </div>
+
+            <!-- Right Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="919ebaca-3be1-41f7-958a-ec65cb64cd6b">
+                
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                
+                    <button type="submit">Send Message</button>        
+                 </form>
+
+                <!-- Success / Error Message -->
+                <p id="formMessage"></p>
+            </div>
+
+        </div>
+
+        <!-- 🔷 MAP + SOCIAL + FAQ -->
+        <section class="extra-contact">
+        
+            <!-- Google Map -->
+            <div class="map-box">
+                <h2>📍 Find Us</h2>
+                <iframe src="https://www.google.com/maps?q=Ahmedabad&output=embed" width="100%" height="300" style="border:0;"
+                    allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        
+            <!-- Social Media -->
+            <div class="social-box">
+                <h2>🌐 Follow Us</h2>
+                <a href="#">📘 Facebook</a>
+                <a href="#">📷 Instagram</a>
+                <a href="#">🐦 Twitter</a>
+                <a href="#">💼 LinkedIn</a>
+            </div>
+        
+            <!-- FAQ -->
+            <div class="faq-box">
+                <h2>❓ FAQs</h2>
+                <p><strong>Q:</strong> How fast do you respond?</p>
+                <p><strong>A:</strong> Usually within 24 hours.</p>
+        
+                <p><strong>Q:</strong> Can I book services from contact page?</p>
+                <p><strong>A:</strong> No, please use Services page.</p>
+            </div>
+        
+        </section>
+    </section>
+
+    <!-- 🔷 FOOTER -->
+    <footer>
+        <p>© 2026 ServiceHub | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/contact.js"></script>
+
+</body>
+
+</html>

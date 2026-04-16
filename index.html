@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <input type="email" id="email" placeholder="Enter Gmail" required><br>
+            <input type="text" id="username" placeholder="Username" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            
+            
+            <!-- IMPORTANT -->
+            <script src="js/favorite.js"></script>
+
+
+            <!-- CAPTCHA -->
+            <p id="captchaText"></p>
+            <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required><br>
+            
+            
+            <script>
+                function goHome() {
+                    window.location.href = "home.html";
+                }
+            </script>
+
+
+            <button type="submit">Login</button>
+        </form>
+
+        <script>
+            document.getElementById("loginForm").addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                // dummy login success
+                window.location.href = "home.html";
+            });
+           </script>
+
+        <form id="registerRedirect">
+            <p>Don't have an account?
+                <a href="register.html">Register here</a>
+            </p>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- ✅ ONLY LOGIN SCRIPT -->
+    <script src="js/login.js"></script>
+    <script src="js/home.js"></script>
+    
+</body>
+
+</html>
+

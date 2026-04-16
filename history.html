@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>History</title>
+    <link rel="stylesheet" href="css/history.css">
+</head>
+
+<body>
+
+    <h1>🕘 Activity History Dashboard</h1>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Total Calls</h3>
+            <p id="totalCalls">0</p>
+        </div>
+    
+        <div class="stat-card">
+            <h3>Total Chats</h3>
+            <p id="totalChats">0</p>
+        </div>
+    
+        <div class="stat-card">
+            <h3>Top Provider</h3>
+            <p id="topProvider">-</p>
+        </div>
+        </div>
+    
+    <div class="top-bar">
+        <input type="text" id="searchHistory" placeholder="Search provider or message...">
+        <button onclick="clearHistory()">🗑 Clear All</button>
+    </div>
+    
+    <h2>📞 Call History</h2>
+    <div id="callHistory"></div>
+    
+    <h2>💬 Chat History</h2>
+    <div id="chatHistory"></div>
+
+    <script src="js/history.js"></script>
+</body>
+
+</html>

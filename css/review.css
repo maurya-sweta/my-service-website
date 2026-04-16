@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    margin: 0;
+}
+
+/* Container */
+.review-container {
+    width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: rgba(30, 30, 47, 0.95);
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading */
+.review-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Average Rating Box */
+.avg-box {
+    text-align: center;
+    background: #2c2c3c;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/* Feedback Card */
+.feedback-box {
+    background: #2c2c3c;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.feedback-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Name */
+.feedback-box h4 {
+    margin: 0;
+}
+
+/* Text */
+.feedback-box p {
+    margin: 6px 0;
+}
+
+/* Date */
+.feedback-box small {
+    opacity: 0.6;
+}
+
+/* Delete Button */
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+/* Back Button */
+.back-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: bold;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Empty State */
+.empty {
+    text-align: center;
+    opacity: 0.7;
+}
