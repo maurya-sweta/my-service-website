@@ -14,15 +14,14 @@
     <a href="contact.html" style="color:white; font-size:18px;">
          </a>
 
-
-    <div class="search-box">
-        <input type="text" id="searchInput" placeholder="🔍 Search services...">
-        <button onclick="searchService()">Search</button>
-    </div>
+ <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search service or provider">
+            <button id="searchBtn">Search</button>  </div>
 
     <div class="nearby-box">
         <button onclick="findNearbyByGPS()">📍 Use My Live Location</button>
         </div> 
+
 
     <!-- Plumber -->
     <div class="service">
@@ -4393,28 +4392,12 @@
          <button class="whatsapp" onclick="whatsappProvider('Pet Care Center','Pet Care')">WhatsApp</button>
      </div>
   </div>
-
-      </div>
-    </div>
-
-    <button class="show-experts-btn" onclick="showTopExperts(this)">
-        🌟 Show Top Experts
-    </button>
-    
-    <div class="top-experts-box">
-        </div>
-
-    <footer style="text-align:center; margin-top:40px;">
-        <a href="contact.html">Contact Us</a>
-        </footer>
-
+</div>
+  </div>
     <script src="js/services.js"></script>
     <script src="js/booking.js"></script>
-
-    
-     <script src="js/services.js"></script>
-
-    <div id="callPopup" class="popup-overlay" style="display:none;">
+  <script src="js/services.js"></script>
+ <div id="callPopup" class="popup-overlay" style="display:none;">
         <div class="popup-box">
             <h2 id="callingName">Calling...</h2>
             <p>📞 Ringing...</p>
@@ -4431,7 +4414,5 @@
             <button onclick="closeChatBox()">Close</button>
         </div>
     </div>
-
- </body>
-
+</body>
 </html>
